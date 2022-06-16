@@ -1,0 +1,18 @@
+span[contenteditable="true"]{
+    border: none;
+    outline: none;
+}
+h3{
+    display: flex;
+    align-items: center;
+}
+h3 ion-icon{
+    margin: 10px;
+    font-size: 30px;
+}
+input{
+    outline: none;
+    border: 2px solid #3399ff;
+    padding: 10px;
+    border-radius: 20px;
+}

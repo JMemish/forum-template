@@ -13,11 +13,25 @@
     font-weight: 700;
     src: url(CircularStd-Bold.otf);
 }
+
+@font-face {
+    font-family: "Calamity";
+    src: url(Calamity-Regular.ed429511.otf);
+}
+@font-face {
+    font-family: "CalamityB";
+    src: url(Calamity-Bold.83343dad.otf);
+}
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap%27");
-body{
+body, input, button{
+    display: flex;
+    flex-direction: column;
+    
+    font-family: "CalamityB";
+}
+h1{
     font-family: "Circular";
 }
-
 a{
     text-decoration: none;
 }

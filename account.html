@@ -7,7 +7,7 @@
     <title>Forum Template</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style2.css">
-    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="account.css">
 </head>
 <body>
     <nav>
@@ -28,19 +28,10 @@
   	</div>
     </nav>
     <br><br><br><br><br><br><br><br>
-    <div class="profile-container">
-       <img src="person.svg" alt="">
-        <h1>John Doe</h1>
-        <br>
-        <ion-icon name="stats-chart" style="color: #3399ff;"></ion-icon>
-        <br>
-        <div class="stats-container">
-          <div class="left"><h3>POSTS</h3> <br> <span data-color="red" class="darkmode-ignore">0</span></div>
-          <div class="middle"><h3>COMMENTS</h3> <br><span data-color="green" class="darkmode-ignore">153</span></div>
-          <div class="right"><h3>POINTS</h3> <br><span data-color="orange" class="darkmode-ignore">306</span></div>
-        </div>
+    <div class="account-container">
+      <h3>Name: <input readonly id="sussy" value="John Doe"><ion-icon id="icon" onclick="edit();" name="create" style="color:#3399ff;"></ion-icon></h3>
     </div>
-    <div class="sussy"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -53,11 +44,14 @@
       window.addEventListener('load', addDarkmodeWidget);
     </script>
     <script>
-    $(document).ready(function(){
-      $(".profile").hover(function(){
-        $(".dropdown").slideToggle();
-      });
-    });
+      var editable=false;
+      function edit(){
+        $("#sussy").removeAttr("readonly");
+        $("#sussy").focus();
+        var editable=true;
+        
+      }
+     
     
 
     </script>
